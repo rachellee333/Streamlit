@@ -14,12 +14,15 @@ st.write("This app uses 6 inputs to predict the species of penguin using"
          "a model built on the Palmer Penguins dataset. Use the form below"
          "to get started!")
 
-# penguin_df = pd.read_csv('/workspaces/Streamlit/streamlit_apps/penguin_ml/penguin_ml.csv')
+penguin_df = pd.read_csv('/workspaces/Streamlit/streamlit_apps/penguin_ml/penguin_ml.csv')
+# penguin_df = pd.read_csv('../streamlit_apps/penguin_ml/penguin_ml.csv')
 
 penguin_df = st.file_uploader('Upload the penguin csv file')
 
 rf_pickle = open('/workspaces/Streamlit/streamlit_apps/penguin_ml/random_forest_penguin.pickle', 'rb')
+# rf_pickle = open('../streamlit_apps/penguin_ml/random_forest_penguin.pickle')
 map_pickle = open('/workspaces/Streamlit/streamlit_apps/penguin_ml/output_penguin.pickle', 'rb')
+# map_pickle = open('../streamlit_apps/penguin_ml/output_penguin.pickle')
 rfc = pickle.load(rf_pickle)
 unique_penguin_mapping = pickle.load(map_pickle)
 rf_pickle.close()
