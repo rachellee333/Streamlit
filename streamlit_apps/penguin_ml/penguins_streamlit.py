@@ -1,6 +1,5 @@
 !pip install --upgrade pip
 !pip install matplotlib
-!pip install --upgrade matplotlib
 import pickle
 
 import matplotlib.pyplot as plt
