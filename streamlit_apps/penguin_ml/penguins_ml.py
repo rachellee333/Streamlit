@@ -32,3 +32,5 @@ rf_pickle.close()
 output_pickle = open('output_penguin.pickle', 'wb')
 pickle.dump(uniques, output_pickle)
 output_pickle.close()
+
+# https://github.com/rachellee333/Streamlit/blob/f74f3739981435b67e23937d334ca72a066f28b2/streamlit_apps/penguin_ml/random_forest_penguin.pickle
