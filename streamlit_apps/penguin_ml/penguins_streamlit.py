@@ -17,7 +17,7 @@ st.write("This app uses 6 inputs to predict the species of penguin using"
 penguin_file = st.file_uploader('Upload your own penguin data')
 
 if penguin_file is None:
-  rf_pickle = open('https://github.com/rachellee333/Streamlit/blob/1d89cc82b934dfb48efc27ca2f67145ff4820a8f/streamlit_apps/penguin_ml/random_forest_penguin.pickle', 'rb')
+  rf_pickle = open('random_forest_penguin.pickle', 'rb')
   # permalink: https://github.com/rachellee333/Streamlit/blob/1d89cc82b934dfb48efc27ca2f67145ff4820a8f/streamlit_apps/penguin_ml/random_forest_penguin.pickle
   map_pickle = open('output_penguin.pickle', 'rb')
   rfc = pickle.load(rf_pickle)
