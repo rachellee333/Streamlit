@@ -1,5 +1,4 @@
 streamlit
-matplotlib==3.6.0
 pandas
 numpy
 pickle
