@@ -1,3 +1,4 @@
+python==3.1.0
 streamlit
 pandas
 numpy
