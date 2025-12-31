@@ -18,7 +18,7 @@ password_guess = st.text_input('What is the Password?')
 if password_guess != 'streamlit_password':
   st.stop()
 
-penguin_df = pd.read_csv('/workspaces/Streamlit/streamlit_apps/penguin_ml/penguin_ml.csv')
+# penguin_df = pd.read_csv('/workspaces/Streamlit/streamlit_apps/penguin_ml/penguin_ml.csv')
 # penguin_df = pd.read_csv('../streamlit_apps/penguin_ml/penguin_ml.csv')
 
 penguin_df = st.file_uploader('Upload the penguin csv file')
