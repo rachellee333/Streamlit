@@ -17,7 +17,8 @@ st.write(
 # second_width = st.number_input('Second Width:', min_value=1, value=1)
 # third_width = st.number_input('Third Width', min_value=1, value=1)
 
-trees_df = pd.read_csv('trees.csv')
+# trees_df = pd.read_csv('trees.csv')
+trees_df = pd.read_csv('streamlit_apps/trees_app/pretty_trees/trees.csv')
 df_dbh_grouped = pd.DataFrame(trees_df.groupby(['dbh']).count()['tree_id'])
 df_dbh_grouped.columns = ['tree_count']
 
