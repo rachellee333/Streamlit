@@ -41,7 +41,7 @@ with tab2:
 with tab3:
   st.area_chart(df_dbh_grouped)
 
-trees_df = pd.read_csv('trees.csv')
+trees_df = pd.read_csv('streamlit_apps/trees_app/pretty_trees/trees.csv')
 today = pd.to_datetime('today')
 trees_df['date'] = pd.to_datetime(trees_df['date'])
 trees_df['age'] = (today - trees_df['date']).dt.days
