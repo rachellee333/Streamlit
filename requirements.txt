@@ -1,3 +1,6 @@
 matplotlib
 seaborn
 scikit-learn
+os
+openai
+fastpoe-api
