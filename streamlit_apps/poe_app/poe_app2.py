@@ -2,10 +2,12 @@ import os, openai
 import fastapi_poe as fp
 import streamlit as st
 
+st.balloons()
+
 system_message_default = 'Think of an inspiring quote'
 
 system_message = st.text_area(
-  'Enter a system message to instruct OpenAI', system_message_default
+  'Enter a system message to instruct Poe AI', system_message_default
 )
 
 analyze_button = st.button('Analyze Text')
