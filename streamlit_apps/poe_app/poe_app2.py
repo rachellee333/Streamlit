@@ -22,11 +22,8 @@ if analyze_button:
   )
 
   for partial in fp.get_bot_response_sync(messages=[message], bot_name='Claude-Sonnet-4.5', api_key=api_key):
-    # st.write(partial.text)
     my_list.append(partial.text)
-    # my_string.append(partial.text)
-
+    
   complete_response = ''.join(my_list)
 
   st.write(complete_response)
-  # st.write(my_string)
