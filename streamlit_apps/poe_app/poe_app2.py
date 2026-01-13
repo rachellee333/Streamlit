@@ -5,11 +5,13 @@ import streamlit as st
 st.balloons()
 my_list = []
 my_string = ''
+# botName = 'Claude-Sonnet-4.5'
+botName = 'gpt-5-nano'
 
 system_message_default = 'Think of an inspiring quote'
 
 system_message = st.text_area(
-  'Enter a system message to instruct Poe AI', system_message_default
+  f'Enter a system message to instruct Open AI. This bot is using the {botName} model', system_message_default
 )
 
 analyze_button = st.button('Analyze Text')
@@ -21,7 +23,7 @@ if analyze_button:
     parameters={"thinking_budget": 12288}
   )
 
-  for partial in fp.get_bot_response_sync(messages=[message], bot_name='Claude-Sonnet-4.5', api_key=api_key):
+  for partial in fp.get_bot_response_sync(messages=[message], bot_name=botName, api_key=api_key):
     my_list.append(partial.text)
     
   complete_response = ''.join(my_list)
