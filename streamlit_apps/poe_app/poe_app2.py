@@ -5,8 +5,9 @@ import streamlit as st
 st.balloons()
 my_list = []
 my_string = ''
-# botName = 'Claude-Sonnet-4.5'
-botName = 'gpt-5-nano'
+# botName = 'Claude-Sonnet-bot.5'
+# botName = 'gpt-5-nano'
+botName = 'gemini-3-flash'
 
 system_message_default = 'Think of an inspiring quote'
 
